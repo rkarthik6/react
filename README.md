@@ -1,1 +1,2 @@
-# react
+# stickiez
+Todo App using ReactJS
