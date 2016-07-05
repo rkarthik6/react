@@ -1,0 +1,136 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+body,
+html,
+div.board,
+div#react-container {
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+div.board {
+    background-color: #444144;
+    width: 100%;
+    /*background: #eab92d;*/
+    /*background: -moz-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);*/
+    /*background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(57%, #eab92d), color-stop(99%, #c79810));*/
+    /*background: -webkit-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);*/
+    /*background: -o-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);*/
+    /*background: -ms-radial-gradient(center, ellipse cover, #eab92d 57%, #c79810 99%);*/
+    /*background: radial-gradient(ellipse at center, #eab92d 57%, #c79810 99%);*/
+    /*filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#eab92d', endColorstr='#c79810', GradientType=1);*/
+
+}
+
+div.note {
+    height: 200px;
+    width: 200px;
+    background-color: #fea500;
+    margin: 2px 0;
+    position: absolute;
+    cursor: -webkit-grab;
+    -webkit-box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+    box-shadow: 5px 5px 15px 0 rgba(0, 0, 0, .2);
+}
+
+div.note:active {
+    cursor: -webkit-grabbing;
+}
+
+div.note p {
+    font-size: 22px;
+    padding: 5px;
+    font-family: "Shadows Into Light", Arial;
+}
+
+div.note:hover > span {
+    opacity: 1;
+}
+
+div.note > span {
+    position: absolute;
+    bottom: 2px;
+    right: 2px;
+    opacity: 0;
+    transition: opacity .25s linear;
+}
+
+div.note button {
+    margin: 2px;
+}
+
+div.note > textarea {
+    height: 75%;
+    background: rgba(255, 255, 255, .5);
+}
+
+.glyphicon-plus {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+}
+
+.animated {
+    /*margin-top: 25px;*/
+    /*font-size: 21px;*/
+    /*text-align: center;*/
+    animation: fadein 2s;
+    -moz-animation: fadein 2s; /* Firefox */
+    -webkit-animation: fadein 2s; /* Safari and Chrome */
+    -o-animation: fadein 2s; /* Opera */
+}
+@keyframes fadein {
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-moz-keyframes fadein { /* Firefox */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-webkit-keyframes fadein { /* Safari and Chrome */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity:1;
+    }
+}
+@-o-keyframes fadein { /* Opera */
+    from {
+        opacity:0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+textarea {
+   resize: none;
+}
+.greetingMess{
+        text-align: center;
+    margin: 0px auto;
+    display: block;
+    font-size: 100px;
+    padding: 20% 10%;
+}
+
+.blink_me {
+  animation: blinker 3s linear infinite;
+}
+
+@keyframes blinker {  
+  50% { opacity: 0.0; }
+}
