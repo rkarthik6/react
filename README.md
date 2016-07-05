@@ -1,2 +1,2 @@
-# stickiez
-Todo App using ReactJS
+# React
+Test App using ReactJS
